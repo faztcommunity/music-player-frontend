@@ -1,0 +1,3 @@
+# Player component documentation
+
+- Para siguientes avances...
