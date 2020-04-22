@@ -23,7 +23,7 @@ const ArtistContainer = () => {
         })
     }, []);
 
-    let match = useRouteMatch("/artistas/:id");
+    let match = useRouteMatch("/artists/:id");
 
     const t = artista && artista.data && artista.data.results.find(e => e.id.value = match.params.id);
 
