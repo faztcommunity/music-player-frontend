@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import MusicPlayer from '../MusicPlayer';
-import Main from './../Main';
-import Sidebar from '../../containers/Sidebar';
-import Search from '../../components/Search/Search';
+import { Switch } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import { Menu, MenuItem } from '@material-ui/core';
-import CardTalent from '../../components/Cards/CardTalent';
 
-import { Switch } from 'react-router-dom';
 import useUser from '../../hooks/useUser';
-
 import MusicPlayerProvider from '../../context/MusicPlayer';
 
-// Requests
-import Artist from '../../requests/Artista/Artista';
+import Main from './../Main';
+import MusicPlayer from '../MusicPlayer';
+import Sidebar from '../../containers/Sidebar';
+
+import Search from '../../components/Search/Search';
+import CardTalent from '../../components/Cards/CardTalent';
 
 export default function MusicApp({ children }) {
   const { isLoggedIn, user } = useUser(false);
