@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-export const MusicPlayerContext = React.createContext();
+const MusicPlayerContext = React.createContext();
 
-export default function MusicPlayerProvider({ children }) {
+export function MusicPlayerProvider({ children }) {
   const [musicPlayerActive, setMusicPlayerActive] = useState(false);
   const [musicPlayerPlaying, setMusicPlayerPlaying] = useState(false);
 
@@ -41,3 +41,5 @@ export default function MusicPlayerProvider({ children }) {
 
   return <MusicPlayerContext.Provider children={children} value={contextValue} />;
 }
+
+export default MusicPlayerContext;

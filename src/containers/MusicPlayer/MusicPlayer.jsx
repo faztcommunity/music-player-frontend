@@ -6,7 +6,7 @@ import { ReactComponent as PreviousIcon } from './../../assets/icons/skip-back.s
 import { ReactComponent as RepeatIcon } from './../../assets/icons/repeat.svg';
 import { ReactComponent as ShuffleIcon } from './../../assets/icons/shuffle.svg';
 
-import { MusicPlayerContext } from '../../context/MusicPlayer';
+import MusicPlayerContext from '../../context/MusicPlayer';
 
 function MusicPlayer() {
   const { playing, active, togglePlaying } = useContext(MusicPlayerContext);

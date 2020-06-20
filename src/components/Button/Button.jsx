@@ -1,8 +1,10 @@
 import React from 'react';
 
-function Button({ children, buttonStyle, extraClasses, ...rest }) {
+function Button({ children, className, primary, ...rest }) {
+  const style = primary ? 'primary' : 'secondary';
+
   return (
-    <button {...rest} className={`button button--${buttonStyle} ${extraClasses}`}>
+    <button {...rest} className={`button button--${style} ${className}`}>
       {children}
     </button>
   );

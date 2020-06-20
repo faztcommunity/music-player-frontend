@@ -5,7 +5,7 @@ import { ReactComponent as PictureIcon } from './../../assets/icons/image.svg';
 import { ReactComponent as UserIcon } from './../../assets/icons/user.svg';
 import { ReactComponent as MusicIcon } from './../../assets/icons/music.svg';
 
-import { MusicPlayerContext } from '../../context/MusicPlayer';
+import MusicPlayerContext from '../../context/MusicPlayer';
 
 import Button from '../../components/Button';
 import SidebarItem from '../../components/SidebarItem/SidebarItem';

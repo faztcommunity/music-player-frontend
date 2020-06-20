@@ -2,7 +2,6 @@ import Grid from '@material-ui/core/Grid';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CardTalent from '../../components/Cards/CardTalent';
-import Search from '../../components/Search/Search';
 import SimpleBarReact from 'simplebar-react';
 import 'simplebar/src/simplebar.css';
 import useUser from '../../hooks/useUser';

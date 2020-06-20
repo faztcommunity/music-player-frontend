@@ -1,0 +1,87 @@
+.album {
+  &-info {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  &-button {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  &-info-box {
+    margin: 3rem;
+
+    & > * {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-img {
+    height: 25rem;
+  }
+
+  &-heading {
+    font-weight: var(--font-weight-sm);
+    color: var(--color-gray-2);
+    text-transform: uppercase;
+  }
+
+  &-title {
+    line-height: 1;
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+  }
+
+  &-info2 {
+    color: var(--color-gray-2);
+    display: flex;
+    // justify-content: space-around;
+    --margin: 1rem;
+
+    & > * {
+      margin-right: var(--margin);
+    }
+
+    & > *:not(:first-child)::before {
+      content: '-';
+      margin-right: var(--margin);
+    }
+  }
+
+  &-songs-box {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-song {
+    display: flex;
+    font-size: 1.9rem;
+    color: var(--color-text);
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid var(--color-gray-1);
+
+    &-title {
+      margin-left: 3rem;
+      margin-right: auto;
+    }
+
+    &-index {
+      width: 2rem;
+      display: block;
+      text-align: center;
+    }
+
+    &-heading {
+      font-weight: var(--font-weight-bold);
+      color: var(--color-gray-2);
+    }
+
+    &-length {
+      width: 10rem;
+      text-align: center;
+    }
+  }
+}

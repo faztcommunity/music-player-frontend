@@ -1,0 +1,1 @@
+# AlbumInfo component documentation

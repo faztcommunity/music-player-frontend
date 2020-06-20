@@ -26,10 +26,6 @@ const ArtistContainer = () => {
 
   return (
     <div className="ArtistaContainer">
-      <Grid container direction="row" justify="space-between" alignItems="flex-start">
-        <Search search="" />
-        <CardTalent image="https://avatars3.githubusercontent.com/u/15000248?s=460&u=2e1dc6e71e73a162aef210b9807890c30bc48c1f&v=4" />
-      </Grid>
       <CardArtist
         width={150}
         height={150}

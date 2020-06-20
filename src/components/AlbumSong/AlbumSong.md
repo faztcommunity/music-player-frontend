@@ -1,0 +1,1 @@
+# AlbumSong component documentation

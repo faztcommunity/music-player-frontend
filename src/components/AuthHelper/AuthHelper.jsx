@@ -76,7 +76,7 @@ export default function AuthHelper({ type, onSubmit }) {
           onChange={(e) => setValue(e, setPassword)}
         />
 
-        <Button extraClasses="login-button" buttonStyle="primary" type="submit">
+        <Button primary className="login-button" type="submit">
           {type === 'signup' ? 'Registrarse' : 'Iniciar Sesión'}
         </Button>
 

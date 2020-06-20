@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import { withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   cardSearch: ({ width, height, borderRadius }) => ({
@@ -50,12 +51,22 @@ const CardSearch = ({
   title = false,
   image,
   children,
-  subTitle
+  subTitle,
+  history,
+  data = {},
+  match
 }) => {
   const classes = useStyles({ width, height, bgSize, borderRadius, image, subTitle });
 
   return (
-    <div className={`${classes.cardSearch}`}>
+    <div className={`${classes.cardSearch}`}
+    onClick={e => {
+      e.preventDefault();
+      history.push({
+        pathname: data.href || `/albums/${data.id}`,
+      })
+    }}
+    >
       <div className={`${classes.cardSearchImage}`}>{children}</div>
       <div className={classes.cardSearchContent}>
         {title && (
@@ -72,4 +83,4 @@ const CardSearch = ({
     </div>
   );
 };
-export default CardSearch;
+export default withRouter(CardSearch);
