@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   cardSearch: ({ width, height, borderRadius }) => ({
     background: theme.palette.grayColor.main,
-    border: `1px solid ${theme.palette.primary}`,
+    //border: `1px solid ${theme.palette.primary}`,
     height: height || 230,
     width: '280px',
     margin: 10,
@@ -21,19 +21,19 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: bgSize || 'cover',
     width: '100%',
     height: 160,
-    boxShadow: theme?.shadowBox?.generic,
+    //boxShadow: theme?.shadowBox?.generic,
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'flex-start'
   }),
   cardSearchContent: () => ({
-    padding: 10,
+    padding: '10px 0px 0px 0px',
     textAlign: 'left',
     height: 'auto',
     background: theme.palette.grayColor.main
   }),
   title: ({ width }) => ({
-    color: 'white',
+    color: '#2a292b',
     fontSize: 16
   }),
   subTitle: ({ width }) => ({
