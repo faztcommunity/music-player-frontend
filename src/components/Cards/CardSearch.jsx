@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import { withRouter } from "react-router-dom";
+import { withRouter } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   cardSearch: ({ width, height, borderRadius }) => ({
@@ -60,13 +60,14 @@ const CardSearch = ({
   const classes = useStyles({ width, height, bgSize, borderRadius, image, subTitle });
 
   return (
-    <div className={`${classes.cardSearch}`}
-    onClick={e => {
-      e.preventDefault();
-      history.push({
-        pathname: data.href || `/albums/${data.id}`,
-      })
-    }}
+    <div
+      className={`${classes.cardSearch}`}
+      onClick={(e) => {
+        e.preventDefault();
+        history.push({
+          pathname: data.href || `/albums/${data.id}`
+        });
+      }}
     >
       <div className={`${classes.cardSearchImage}`}>{children}</div>
       <div className={classes.cardSearchContent}>

@@ -11,10 +11,8 @@ import CardTalent from '../../components/Cards/CardTalent';
 
 // Requests
 import Artist from '../../requests/Artista/Artista';
-import useUser from '../../hooks/useUser';
 
 function Home() {
-  const { user } = useUser();
   const [artista, setArtista] = useState([]);
 
   useEffect(() => {

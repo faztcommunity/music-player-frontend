@@ -8,7 +8,7 @@ import useUser from '../../hooks/useUser';
 import useQuery from '../../hooks/useQuery';
 
 export default function AuthHelper({ type, onSubmit }) {
-  const { user, isLoggedIn } = useUser(false);
+  const { user, isLoggedIn } = useUser();
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
