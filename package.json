@@ -6,7 +6,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "prettier --write \"./src/**/*.{js,ts,jsx,tsx,json,md,css,scss}\""
+    "lint": "prettier --write \"./src/**/*.{js,ts,jsx,tsx,json,md,css,scss}\"",
+    "postinstall": "link-module-alias"
+  },
+  "_moduleAliases": {
+    "@components": "src/components",
+    "@containers": "src/containers",
+    "@hooks": "src/hooks",
+    "@Mocks": "src/Mocks",
+    "@requests": "src/requests",
+    "@context": "src/context",
+    "@icons": "src/assets/icons",
+    "@images": "src/assets/img"
   },
   "repository": {
     "type": "git",
@@ -53,6 +64,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
+    "link-module-alias": "^1.2.0",
     "moment": "^2.27.0",
     "node-sass": "^4.14.1",
     "react": "16.13.1",

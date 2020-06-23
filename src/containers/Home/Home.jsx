@@ -5,13 +5,13 @@ import Grid from '@material-ui/core/Grid';
 import SimpleBarReact from 'simplebar-react';
 import 'simplebar/src/simplebar.css';
 
-import CardLandscape from '../../components/Cards/CardLandscape';
-import CardSearch from '../../components/Cards/CardSearch';
-import CardTalent from '../../components/Cards/CardTalent';
+import CardLandscape from '@components/Cards/CardLandscape';
+import CardSearch from '@components/Cards/CardSearch';
+import CardTalent from '@components/Cards/CardTalent';
 
 // Requests
-import Artist from '../../requests/Artista/Artista';
-import useUser from '../../hooks/useUser';
+import Artist from '@requests/Artista/Artista';
+import useUser from '@hooks/useUser';
 
 function Home() {
   const { user } = useUser();
