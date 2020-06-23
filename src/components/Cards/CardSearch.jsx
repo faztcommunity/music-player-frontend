@@ -6,7 +6,6 @@ import { withRouter } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   cardSearch: ({ width, height, borderRadius }) => ({
     background: theme.palette.grayColor.main,
-    //border: `1px solid ${theme.palette.primary}`,
     height: height || 230,
     width: '280px',
     margin: 10,
@@ -22,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 3,
     width: '100%',
     height: 160,
-    //boxShadow: theme?.shadowBox?.generic,
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'flex-start'
