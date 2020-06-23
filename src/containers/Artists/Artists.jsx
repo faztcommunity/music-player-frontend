@@ -1,13 +1,14 @@
 import Grid from '@material-ui/core/Grid';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import CardTalent from '../../components/Cards/CardTalent';
+import CardTalent from '@components/Cards/CardTalent';
 import SimpleBarReact from 'simplebar-react';
 import 'simplebar/src/simplebar.css';
+import useUser from '@hooks/useUser';
 
 // Requests
-import Artist from '../../requests/Artista/Artista';
-import genres from '../../Mocks/mock-genres';
+import Artist from '@requests/Artista/Artista';
+import genres from '@Mocks/mock-genres';
 
 const Artists = () => {
   const [artistas, setArtistas] = useState([]);
