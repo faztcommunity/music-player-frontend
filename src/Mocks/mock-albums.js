@@ -13,6 +13,48 @@ const albums = [
     year: 2001,
     imageUrl: 'https://i.scdn.co/image/ab67616d00001e028b2c42026277efc3e058855b'
   },
+  {
+    id: 3,
+    title: 'Let Them Talk',
+    artist: 'Hugh Laurie',
+    year: 2011,
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02bb49773dc6bea14004bed7c1'
+  },
+  {
+    id: 4,
+    title: 'Black Album',
+    artist: 'Metallica',
+    year: 1991,
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02cf84c5b276431b473e924802'
+  },
+  {
+    id: 5,
+    title: 'The Paradigm Shift',
+    artist: 'Korn',
+    year: 2011,
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02e1fd75842ba5ed26016bf541'
+  },
+  {
+    id: 6,
+    title: 'Let Them Talk',
+    artist: 'Hugh Laurie',
+    year: 2011,
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02bb49773dc6bea14004bed7c1'
+  },
+  {
+    id: 7,
+    title: 'Let Them Talk',
+    artist: 'Hugh Laurie',
+    year: 2011,
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02bb49773dc6bea14004bed7c1'
+  },
+  {
+    id: 8,
+    title: 'Let Them Talk',
+    artist: 'Hugh Laurie',
+    year: 2011,
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02bb49773dc6bea14004bed7c1'
+  }
 ];
 
 export default albums;
