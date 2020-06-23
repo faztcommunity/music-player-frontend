@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     height: height || 230,
     width: '280px',
     margin: 10,
-    borderRadius: borderRadius || 6,
+    borderRadius: borderRadius || 3,
     overflow: 'auto'
   }),
   cardSearchImage: ({ bgSize, image }) => ({
@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     })`,
     position: 'relative',
     backgroundSize: bgSize || 'cover',
+    borderRadius: 3,
     width: '100%',
     height: 160,
     //boxShadow: theme?.shadowBox?.generic,
