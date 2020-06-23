@@ -10,7 +10,7 @@ import CardSearch from '@components/Cards/CardSearch';
 import CardTalent from '@components/Cards/CardTalent';
 
 // Requests
-import Artist from '@requests/Artista/Artista';
+import Artist from '../../requests/Artista/Artista';
 
 function Home() {
   const [artista, setArtista] = useState([]);

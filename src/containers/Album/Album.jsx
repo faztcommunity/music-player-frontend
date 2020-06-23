@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import AlbumSongs from '@components/AlbumSongs';
-import AlbumInfo from '@components/AlbumInfo';
+import AlbumSongs from '../../components/AlbumSongs';
+import AlbumInfo from '../../components/AlbumInfo';
 
 // Requests
-import albumMock from '@Mocks/mock-album';
+import albumMock from '../../Mocks/mock-album';
 
 export default function Album() {
   const { id } = useParams();
