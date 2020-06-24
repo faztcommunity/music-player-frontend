@@ -8,6 +8,7 @@ export default function AuthProvider({ children }) {
   //   user: { email: 'john@example.com' }
   // };
   const [data, setData] = useState({});
+  const [value, setValue] = useState({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,6 +25,10 @@ export default function AuthProvider({ children }) {
     setLoading(false);
   }, []);
 
+  useEffect(() => {
+    setValue({ user: data.user, logIn, logOut, isLoggedIn: !!data.user });
+  }, [data]);
+
   // TODO: Return a loading icon
   if (loading) return null;
 
@@ -38,7 +43,5 @@ export default function AuthProvider({ children }) {
     localStorage.clear();
   }
 
-  const contextValue = { user: data.user, logIn, logOut, isLoggedIn: !!data.user };
-
-  return <AuthContext.Provider children={children} value={contextValue} />;
+  return <AuthContext.Provider children={children} value={value} />;
 }

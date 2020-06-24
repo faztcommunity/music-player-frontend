@@ -1,19 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const MusicPlayerContext = React.createContext();
 
 export function MusicPlayerProvider({ children }) {
+  const [value, setValue] = useState({});
   const [musicPlayerActive, setMusicPlayerActive] = useState(false);
   const [musicPlayerPlaying, setMusicPlayerPlaying] = useState(false);
-
-  function togglePlaying() {
-    setMusicPlayerPlaying((playing) => !playing);
-  }
-
-  function toggle() {
-    togglePlaying();
-    setMusicPlayerActive((active) => !active);
-  }
 
   function play(song) {
     setMusicPlayerActive(true);
@@ -29,17 +21,28 @@ export function MusicPlayerProvider({ children }) {
     setMusicPlayerActive(false);
   }
 
-  const contextValue = {
-    active: musicPlayerActive,
-    playing: musicPlayerPlaying,
-    play,
-    pause,
-    stop,
-    toggle,
-    togglePlaying
-  };
+  useEffect(() => {
+    function togglePlaying() {
+      setMusicPlayerPlaying((playing) => !playing);
+    }
 
-  return <MusicPlayerContext.Provider children={children} value={contextValue} />;
+    function toggle() {
+      togglePlaying();
+      setMusicPlayerActive((active) => !active);
+    }
+
+    setValue({
+      active: musicPlayerActive,
+      playing: musicPlayerPlaying,
+      play,
+      pause,
+      stop,
+      toggle,
+      togglePlaying
+    });
+  }, [musicPlayerActive, musicPlayerPlaying]);
+
+  return <MusicPlayerContext.Provider children={children} value={value} />;
 }
 
 export default MusicPlayerContext;
