@@ -1,12 +1,14 @@
 .login {
   font-size: 1.6rem;
   line-height: 1.6;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &-label {
     margin-bottom: 0.8rem;
