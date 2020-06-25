@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import CardTalent from '@components/Cards/CardTalent';
 import SimpleBarReact from 'simplebar-react';
 import 'simplebar/src/simplebar.css';
-import useUser from '@hooks/useUser';
 
 // Requests
 import Artist from '@requests/Artista/Artista';

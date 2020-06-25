@@ -12,7 +12,6 @@ import CardTalent from '@components/Cards/CardTalent';
 // Requests
 import Artist from '@requests/Artista/Artista';
 import albumsMock from '@Mocks/mock-albums';
-import useUser from '@hooks/useUser';
 
 function Home() {
   const [artista, setArtista] = useState([]);
