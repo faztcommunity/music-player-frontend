@@ -36,24 +36,24 @@ const albums = [
   },
   {
     id: 6,
-    title: 'Let Them Talk',
-    artist: 'Hugh Laurie',
-    year: 2011,
-    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02bb49773dc6bea14004bed7c1'
+    title: 'The Black Waltz',
+    artist: 'Avatar',
+    year: 2012,
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02c21e4170ca0be106a1f491bf'
   },
   {
     id: 7,
-    title: 'Let Them Talk',
-    artist: 'Hugh Laurie',
-    year: 2011,
-    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02bb49773dc6bea14004bed7c1'
+    title: 'Indestructible ',
+    artist: 'Disturbed',
+    year: 2008,
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e021aeed60b435be44dd68a57a3'
   },
   {
     id: 8,
-    title: 'Let Them Talk',
-    artist: 'Hugh Laurie',
+    title: 'Antichrist Superstar',
+    artist: 'Marilyn Manson',
     year: 2011,
-    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02bb49773dc6bea14004bed7c1'
+    imageUrl: 'https://i.scdn.co/image/ab67616d00001e02c61d3a663bd18fe8cd97c947'
   }
 ];
 
