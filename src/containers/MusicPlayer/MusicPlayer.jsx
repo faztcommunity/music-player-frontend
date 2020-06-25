@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import { ReactComponent as NextIcon } from './../../assets/icons/skip-forward.svg';
-import { ReactComponent as PauseIcon } from './../../assets/icons/pause.svg';
-import { ReactComponent as PlayIcon } from './../../assets/icons/play.svg';
-import { ReactComponent as PreviousIcon } from './../../assets/icons/skip-back.svg';
-import { ReactComponent as RepeatIcon } from './../../assets/icons/repeat.svg';
-import { ReactComponent as ShuffleIcon } from './../../assets/icons/shuffle.svg';
+import { ReactComponent as NextIcon } from '@icons/skip-forward.svg';
+import { ReactComponent as PauseIcon } from '@icons/pause.svg';
+import { ReactComponent as PlayIcon } from '@icons/play.svg';
+import { ReactComponent as PreviousIcon } from '@icons/skip-back.svg';
+import { ReactComponent as RepeatIcon } from '@icons/repeat.svg';
+import { ReactComponent as ShuffleIcon } from '@icons/shuffle.svg';
 
-import MusicPlayerContext from '../../context/MusicPlayer';
+import MusicPlayerContext from '@context/MusicPlayer';
 
 function MusicPlayer() {
   const { playing, active, togglePlaying } = useContext(MusicPlayerContext);

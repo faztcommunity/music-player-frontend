@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import Button from '../Button';
-import MusicPlayerContext from '../../context/MusicPlayer';
+import Button from '@components/Button';
+import MusicPlayerContext from '@context/MusicPlayer';
 
 export default function AlbumInfo({ album }) {
   const imageAlt = `${album.title}'s Cover`;

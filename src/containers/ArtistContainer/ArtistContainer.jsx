@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { useRouteMatch } from 'react-router-dom';
 
 // Components
-import SlideContainer from '../SlideContainer';
-import CardSearch from '../../components/Cards/CardSearch';
-import CardArtist from '../../components/Cards/CardArtist';
+import Grid from '@material-ui/core/Grid';
+import SlideContainer from '@containers/SlideContainer';
+import CardSearch from '@components/Cards/CardSearch';
+import CardArtist from '@components/Cards/CardArtist';
+import CardTalent from '@components/Cards/CardTalent';
+import Search from '@components/Search/Search';
 
 // Requests
-import Artist from '../../requests/Artista/Artista';
+import Artist from '@requests/Artista/Artista';
 
 const ArtistContainer = (history) => {
   const [artista, setArtista] = useState([]);

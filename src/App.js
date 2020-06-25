@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Login from './containers/Login';
-import SignUp from './containers/SignUp';
-import Home from './containers/Home';
-import MusicApp from './containers/MusicApp';
-import ArtistContainer from './containers/ArtistContainer';
-import Artists from './containers/Artists';
-import Album from './containers/Album';
-import PrivateRoute from './containers/PrivateRoute';
+import Login from '@containers/Login';
+import SignUp from '@containers/SignUp';
+import Home from '@containers/Home';
+import MusicApp from '@containers/MusicApp';
+import ArtistContainer from '@containers/ArtistContainer';
+import Artists from '@containers/Artists';
+import Album from '@containers/Album';
+import PrivateRoute from '@containers/PrivateRoute';
 
-import Message from './components/Message';
-import AuthProvider from './context/Auth';
+import Message from '@components/Message';
+import AuthProvider from '@context/Auth';
 
 function App() {
   return (

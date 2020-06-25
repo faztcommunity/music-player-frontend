@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import Button from './../Button';
-import logo from './../../assets/img/fazt.png';
+import Button from '@components/Button';
+import logo from '@images/fazt.png';
 import { Link } from 'react-router-dom';
 
-import useUser from '../../hooks/useUser';
-import useQuery from '../../hooks/useQuery';
+import useUser from '@hooks/useUser';
+import useQuery from '@hooks/useQuery';
 
 export default function AuthHelper({ type, onSubmit }) {
   const { user, isLoggedIn } = useUser();

@@ -6,11 +6,10 @@ import { withRouter } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   cardSearch: ({ width, height, borderRadius }) => ({
     background: theme.palette.grayColor.main,
-    border: `1px solid ${theme.palette.primary}`,
     height: height || 230,
     width: '280px',
     margin: 10,
-    borderRadius: borderRadius || 6,
+    borderRadius: borderRadius || 3,
     overflow: 'auto'
   }),
   cardSearchImage: ({ bgSize, image }) => ({
@@ -19,21 +18,21 @@ const useStyles = makeStyles((theme) => ({
     })`,
     position: 'relative',
     backgroundSize: bgSize || 'cover',
+    borderRadius: 3,
     width: '100%',
     height: 160,
-    boxShadow: theme?.shadowBox?.generic,
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'flex-start'
   }),
   cardSearchContent: () => ({
-    padding: 10,
+    padding: '10px 0px 0px 0px',
     textAlign: 'left',
     height: 'auto',
     background: theme.palette.grayColor.main
   }),
   title: ({ width }) => ({
-    color: 'white',
+    color: '#2a292b',
     fontSize: 16
   }),
   subTitle: ({ width }) => ({

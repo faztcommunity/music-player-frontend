@@ -1,25 +1,37 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 
 import SimpleBarReact from 'simplebar-react';
 import 'simplebar/src/simplebar.css';
 
-import CardLandscape from '../../components/Cards/CardLandscape';
-import CardSearch from '../../components/Cards/CardSearch';
-import CardTalent from '../../components/Cards/CardTalent';
+import CardLandscape from '@components/Cards/CardLandscape';
+import CardSearch from '@components/Cards/CardSearch';
+import CardTalent from '@components/Cards/CardTalent';
 
 // Requests
-import Artist from '../../requests/Artista/Artista';
+import Artist from '@requests/Artista/Artista';
+import albumsMock from '@Mocks/mock-albums';
+import useUser from '@hooks/useUser';
 
 function Home() {
   const [artista, setArtista] = useState([]);
+  const { id } = useParams();
+  const [albums, setAlbum] = useState({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     Artist.get('?results=7').then((res) => {
       setArtista(res);
     });
+  }, [id]);
+
+  useEffect(() => {
+    setAlbum(albumsMock);
+    setLoading(false);
   }, []);
+
+  if (loading) return null;
 
   return (
     <div className="home">
@@ -45,14 +57,16 @@ function Home() {
         scrollbarMinSize="20"
       >
         <Grid className="albumsRecents">
-          <CardSearch title="Mutter" subTitle="Rammstein" />
-          <CardSearch title="Mutter" subTitle="Rammstein" />
-          <CardSearch title="Mutter" subTitle="Rammstein" />
-          <CardSearch title="Mutter" subTitle="Rammstein" />
-          <CardSearch title="Mutter" subTitle="Rammstein" />
-          <CardSearch title="Mutter" subTitle="Rammstein" />
-          <CardSearch title="Mutter" subTitle="Rammstein" />
-          <CardSearch title="Mutter" subTitle="Rammstein" />
+          {albums.map((items) => {
+            return (
+              <CardSearch
+                title={items.title}
+                subTitle={items.artist}
+                image={items.imageUrl}
+                key={items.id}
+              />
+            );
+          })}
         </Grid>
       </SimpleBarReact>
       <br></br>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import useUser from '../../hooks/useUser';
-import Search from '../../components/Search/Search';
+import useUser from '@hooks/useUser';
+import Search from '@components/Search/Search';
 import Grid from '@material-ui/core/Grid';
 import { Menu, MenuItem } from '@material-ui/core';
-import CardTalent from '../../components/Cards/CardTalent';
+import CardTalent from '@components/Cards/CardTalent';
 
 export default function UserNav() {
   const { user } = useUser();

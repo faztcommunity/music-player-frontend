@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 
-import { ReactComponent as HomeIcon } from './../../assets/icons/home.svg';
-import { ReactComponent as PictureIcon } from './../../assets/icons/image.svg';
-import { ReactComponent as UserIcon } from './../../assets/icons/user.svg';
-import { ReactComponent as MusicIcon } from './../../assets/icons/music.svg';
+import { ReactComponent as HomeIcon } from '@icons/home.svg';
+import { ReactComponent as PictureIcon } from '@icons/image.svg';
+import { ReactComponent as UserIcon } from '@icons/user.svg';
+import { ReactComponent as MusicIcon } from '@icons/music.svg';
 
-import MusicPlayerContext from '../../context/MusicPlayer';
+import MusicPlayerContext from '@context/MusicPlayer';
 
-import Button from '../../components/Button';
-import SidebarItem from '../../components/SidebarItem/SidebarItem';
-import SidebarItemList from '../../components/SidebarItemList/SidebarItemList';
+import Button from '@components/Button';
+import SidebarItem from '@components/SidebarItem/SidebarItem';
+import SidebarItemList from '@components/SidebarItemList/SidebarItemList';
 
 function Sidebar({ title }) {
   const { toggle: toggleMusicPlayer } = useContext(MusicPlayerContext);

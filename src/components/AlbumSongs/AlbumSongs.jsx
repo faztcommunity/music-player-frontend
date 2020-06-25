@@ -1,5 +1,5 @@
 import React from 'react';
-import Song from '../AlbumSong';
+import Song from '@components/AlbumSong';
 
 export default function AlbumSongs({ songs }) {
   return (

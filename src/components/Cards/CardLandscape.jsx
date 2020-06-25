@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Chip from '@material-ui/core/Chip';
 
-import { ReactComponent as StarIcon } from './../../assets/icons/star.svg';
+import { ReactComponent as StarIcon } from '@icons/star.svg';
 const defaultImage = require('./images/default-image.svg');
 
 const useStyles = makeStyles((theme) => ({
