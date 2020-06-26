@@ -1,0 +1,1 @@
+# Section component documentation

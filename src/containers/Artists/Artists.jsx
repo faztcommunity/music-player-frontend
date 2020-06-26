@@ -5,6 +5,7 @@ import CardTalent from '@components/Cards/CardTalent';
 import SimpleBarReact from 'simplebar-react';
 import 'simplebar/src/simplebar.css';
 import useUser from '@hooks/useUser';
+import Section from '@containers/Section';
 
 // Requests
 import Artist from '@requests/Artista/Artista';
@@ -22,9 +23,7 @@ const Artists = () => {
   return (
     <div className="artists">
       {genres.map((genre) => (
-        <div className="generoArtistas">
-          <h4>{genre.name}</h4>
-
+        <Section className="generoArtistas" title={genre.name}>
           <SimpleBarReact
             direction="rtl"
             autoHide={false}
@@ -51,7 +50,7 @@ const Artists = () => {
                 ))}
             </Grid>
           </SimpleBarReact>
-        </div>
+        </Section>
       ))}
     </div>
   );
