@@ -1,0 +1,12 @@
+.sidebar-nav {
+  display: flex;
+  list-style: none;
+  font-size: 2rem;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.sidebar-heading {
+  font-size: 1.5rem;
+  color: var(--color-gray-2);
+}

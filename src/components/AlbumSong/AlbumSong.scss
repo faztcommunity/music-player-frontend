@@ -1,0 +1,28 @@
+.album-song {
+  display: flex;
+  font-size: 1.9rem;
+  color: var(--color-text);
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid var(--color-gray-1);
+
+  &-title {
+    margin-left: 3rem;
+    margin-right: auto;
+  }
+
+  &-index {
+    width: 2rem;
+    display: block;
+    text-align: center;
+  }
+
+  &-heading {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-2);
+  }
+
+  &-length {
+    width: 10rem;
+    text-align: center;
+  }
+}

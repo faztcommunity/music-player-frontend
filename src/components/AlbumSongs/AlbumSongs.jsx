@@ -1,5 +1,5 @@
 import React from 'react';
-import Song from '@components/AlbumSong';
+import AlbumSong from '@components/AlbumSong';
 
 export default function AlbumSongs({ songs }) {
   return (
@@ -10,7 +10,7 @@ export default function AlbumSongs({ songs }) {
         <div className="album-song-length">Duración</div>
       </li>
       {songs.map((song, index) => (
-        <Song key={song.id} index={index + 1} song={song} />
+        <AlbumSong key={song.id} index={index + 1} song={song} />
       ))}
     </ul>
   );

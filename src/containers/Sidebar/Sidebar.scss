@@ -22,53 +22,7 @@
     margin-bottom: 2rem;
   }
 
-  &-heading {
-    font-size: 1.5rem;
-    color: var(--color-gray-2);
-  }
-
   &:hover {
     overflow-y: auto;
-  }
-
-  &-nav {
-    display: flex;
-    list-style: none;
-    font-size: 2rem;
-    flex-direction: column;
-    margin-bottom: 4rem;
-  }
-
-  &-item {
-    width: 100%;
-  }
-
-  &-link {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    color: var(--color-text);
-    min-width: 50%;
-    transition: all 0.2s;
-    border-radius: var(--border-radius);
-    outline: none;
-
-    &--active,
-    &:hover,
-    &:focus {
-      --color-text: var(--color-primary);
-      background-color: var(--color-primary-bg);
-    }
-  }
-
-  &-icon {
-    --icon-size: 2.2rem;
-    width: var(--icon-size);
-    height: var(--icon-size);
-    fill: var(--color-text);
-    display: block;
-    margin-right: 1.3rem;
   }
 }

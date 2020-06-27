@@ -1,0 +1,44 @@
+.album-info-box {
+  margin: 3rem;
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+}
+
+.album-img {
+  height: 25rem;
+}
+
+.album-heading {
+  font-weight: var(--font-weight-sm);
+  color: var(--color-gray-2);
+  text-transform: uppercase;
+}
+
+.album-title {
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.album-info2 {
+  color: var(--color-gray-2);
+  display: flex;
+  // justify-content: space-around;
+  --margin: 1rem;
+
+  & > * {
+    margin-right: var(--margin);
+  }
+
+  & > *:not(:first-child)::before {
+    content: '-';
+    margin-right: var(--margin);
+  }
+}
+
+.album-button {
+  margin-top: 1rem;
+  font-size: 2rem;
+}

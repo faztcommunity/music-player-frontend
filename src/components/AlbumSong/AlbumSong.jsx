@@ -3,7 +3,7 @@ import moment from 'moment';
 
 export default function AlbumSong({ song, index }) {
   return (
-    <li className={'album-song'}>
+    <li className="album-song">
       <div className="album-song-index">{index}</div>
       <div className="album-song-title">{song.title}</div>
       <div className="album-song-length">
