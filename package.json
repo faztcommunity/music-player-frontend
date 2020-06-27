@@ -13,7 +13,7 @@
     "@components": "src/components",
     "@containers": "src/containers",
     "@hooks": "src/hooks",
-    "@Mocks": "src/Mocks",
+    "@Mocks": "src/mocks",
     "@requests": "src/requests",
     "@context": "src/context",
     "@icons": "src/assets/icons",

@@ -17,6 +17,10 @@ const theme = createMuiTheme({
     },
     colorActive: {
       main: '#47536b'
+    },
+    heading: {
+      fontWeight: 400,
+      color: '#777'
     }
   },
   shadowBox: {
