@@ -1,0 +1,32 @@
+.sidebar-item {
+  width: 100%;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--color-text);
+  min-width: 50%;
+  transition: all 0.2s;
+  border-radius: var(--border-radius);
+  outline: none;
+
+  &--active,
+  &:hover,
+  &:focus {
+    --color-text: var(--color-primary);
+    background-color: var(--color-primary-bg);
+  }
+}
+
+.sidebar-icon {
+  --icon-size: 2.2rem;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  fill: var(--color-text);
+  display: block;
+  margin-right: 1.3rem;
+}

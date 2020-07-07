@@ -1,30 +1,29 @@
+import CardSearch from '@components/Cards/CardSearch';
+import Section from '@containers/Section';
 import Grid from '@material-ui/core/Grid';
+// Requests
+import albumsMock from '@Mocks/mock-albums';
+import genres from '@Mocks/mock-genres';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import CardTalent from '@components/Cards/CardTalent';
 import SimpleBarReact from 'simplebar-react';
 import 'simplebar/src/simplebar.css';
 
-import Section from '@containers/Section';
-
-
-// Requests
-import Artist from '@requests/Artista/Artista';
-import genres from '@Mocks/mock-genres';
-
-const Artists = () => {
-  const [artistas, setArtistas] = useState([]);
+const Albumns = () => {
+  const [albums, setAlbums] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Artist.get('?results=20').then((res) => {
-      setArtistas(res);
-    });
+    setAlbums(albumsMock);
+    setLoading(false);
   }, []);
+
+  if (loading) return null;
 
   return (
     <div className="artists">
       {genres.map((genre) => (
-        <Section key={genre.id} className="generoArtistas" title={genre.name}>
+        <Section className="generoAlbumes" title={genre.name}>
           <SimpleBarReact
             direction="rtl"
             autoHide={false}
@@ -32,20 +31,19 @@ const Artists = () => {
             scrollbarMinSize="20"
           >
             <Grid container justify="flex-start" alignItems="flex-start" wrap="nowrap">
-              {artistas?.data?.results
+              {albums
                 ?.sort(() => Math.random() - 0.5)
                 .map((e, index) => (
                   <Link
-                    to={`/artists/${e.id.value}`}
+                    to={`/albums/${e.id.value}`}
                     key={index}
                     style={{ textDecoration: 'none' }}
                   >
-                    <CardTalent
-                      width={200}
-                      height={200}
-                      title={e.name.first}
-                      image={e.picture.large}
-                      // infoTalent={`# ${index + 1}`}
+                    <CardSearch
+                      title={e.title}
+                      subTitle={e.artist}
+                      image={e.imageUrl}
+                      key={e.id}
                     />
                   </Link>
                 ))}
@@ -57,4 +55,4 @@ const Artists = () => {
   );
 };
 
-export default Artists;
+export default Albumns;

@@ -1,16 +1,16 @@
 import React from 'react';
-import Song from '@components/AlbumSong';
+import AlbumSong from '@components/AlbumSong';
 
 export default function AlbumSongs({ songs }) {
   return (
-    <ul className="album-songs-box">
-      <li className="album-song album-song-heading">
-        <div className="album-song-index">#</div>
-        <div className="album-song-title">Titulo</div>
-        <div className="album-song-length">Duración</div>
+    <ul className="AlbumSongs-box">
+      <li className="AlbumSong AlbumSong-heading">
+        <div className="AlbumSong-index">#</div>
+        <div className="AlbumSong-title">Titulo</div>
+        <div className="AlbumSong-length">Duración</div>
       </li>
       {songs.map((song, index) => (
-        <Song key={song.id} index={index + 1} song={song} />
+        <AlbumSong key={song.id} index={index + 1} song={song} />
       ))}
     </ul>
   );

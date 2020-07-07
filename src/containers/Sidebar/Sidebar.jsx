@@ -8,8 +8,8 @@ import { ReactComponent as MusicIcon } from '@icons/music.svg';
 import MusicPlayerContext from '@context/MusicPlayer';
 
 import Button from '@components/Button';
-import SidebarItem from '@components/SidebarItem/SidebarItem';
-import SidebarItemList from '@components/SidebarItemList/SidebarItemList';
+import SidebarItem from '@components/SidebarItem';
+import SidebarItemList from '@components/SidebarItemList';
 
 function Sidebar({ title }) {
   const { toggle: toggleMusicPlayer } = useContext(MusicPlayerContext);

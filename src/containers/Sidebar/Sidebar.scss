@@ -1,0 +1,28 @@
+.sidebar {
+  box-shadow: 0 1px 10px rgba(#333, 0.1);
+
+  padding: 10rem 3rem;
+  overflow-y: hidden;
+  background-color: var(--bgcolor-sidebar);
+  display: flex;
+  flex-direction: column;
+  font-weight: var(--font-weight-bold);
+
+  &-title,
+  &-heading {
+    color: var(--color-text);
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+
+  &-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &:hover {
+    overflow-y: auto;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import Button from '@components/Button';
+import Input from '@components/Input';
 import logo from '@images/fazt.png';
 import { Link } from 'react-router-dom';
 
@@ -44,9 +45,9 @@ export default function AuthHelper({ type, onSubmit }) {
             <label htmlFor="login-username" className="login-label">
               Nombre de usuario
             </label>
-            <input
+            <Input
               id="login-username"
-              className="input login-input"
+              className="login-input"
               type="text"
               value={username}
               onChange={(e) => setValue(e, setUsername)}
@@ -57,9 +58,9 @@ export default function AuthHelper({ type, onSubmit }) {
         <label htmlFor="login-email" className="login-label">
           Correo electrónico
         </label>
-        <input
+        <Input
           id="login-email"
-          className="input login-input"
+          className="login-input"
           type="email"
           value={email}
           onChange={(e) => setValue(e, setEmail)}
@@ -68,9 +69,9 @@ export default function AuthHelper({ type, onSubmit }) {
           Contraseña
         </label>
 
-        <input
+        <Input
           id="login-password"
-          className="input login-input"
+          className="login-input"
           type="password"
           value={password}
           onChange={(e) => setValue(e, setPassword)}

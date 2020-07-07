@@ -1,0 +1,37 @@
+.AlbumInfo {
+  display: flex;
+  margin: 1rem 0;
+
+  &-image {
+    height: 25rem;
+  }
+
+  &-box {
+    margin: 3rem;
+
+    & > * {
+      margin-bottom: 1rem;
+    }
+
+    &-heading {
+      font-weight: var(--font-weight-sm);
+      color: var(--color-gray-2);
+      text-transform: uppercase;
+    }
+
+    &-title {
+      line-height: 1;
+      font-size: 4rem;
+      font-weight: var(--font-weight-bold);
+    }
+
+    &-info2 {
+      color: var(--color-gray-2);
+    }
+
+    &-button {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+}

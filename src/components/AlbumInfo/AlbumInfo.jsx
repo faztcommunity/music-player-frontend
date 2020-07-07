@@ -11,20 +11,18 @@ export default function AlbumInfo({ album }) {
   }
 
   return (
-    <>
-      <img className="album-img" src={album.imageUrl} alt={imageAlt} />
-      <div className="album-info-box">
-        <h4 className="album-heading">Álbum</h4>
-        <h1 className="album-title">{album.title}</h1>
-        <div className="album-info2">
-          <p>{album.artist.name}</p>
-          <p>{album.songs.length} canciones</p>
-          <p>{album.year}</p>
+    <div className="AlbumInfo">
+      <img className="AlbumInfo-image" src={album.imageUrl} alt={imageAlt} />
+      <div className="AlbumInfo-box">
+        <h4 className="AlbumInfo-box-heading">Álbum</h4>
+        <h1 className="AlbumInfo-box-title">{album.title}</h1>
+        <div className="AlbumInfo-box-info2">
+          {`${album.artist.name} — ${album.songs.length} canciones — ${album.year}`}
         </div>
-        <Button primary className="album-button" onClick={playAlbum}>
+        <Button primary className="AlbumInfo-box-button" onClick={playAlbum}>
           Reproducir
         </Button>
       </div>
-    </>
+    </div>
   );
 }

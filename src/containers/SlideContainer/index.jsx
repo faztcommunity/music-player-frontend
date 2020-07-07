@@ -1,15 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Slider from 'react-slick';
 import './react-slick.scss';
-
-const useStyles = makeStyles((theme) => ({
-  typography: ({ width }) => ({
-    color: 'white',
-    marginTop: 10,
-    width: width || 290
-  })
-}));
 
 const SlideContainer = ({
   children,

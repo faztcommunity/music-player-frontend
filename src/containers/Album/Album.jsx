@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import AlbumSongs from '@components/AlbumSongs';
 import AlbumInfo from '@components/AlbumInfo';
-
+import AlbumSongs from '@components/AlbumSongs';
 // Requests
 import albumMock from '@Mocks/mock-album';
 
@@ -22,9 +21,7 @@ export default function Album() {
 
   return (
     <div className="album">
-      <section className="album-info">
-        <AlbumInfo album={album} />
-      </section>
+      <AlbumInfo album={album} />
       <section className="album-songs">
         <AlbumSongs songs={album.songs} />
       </section>

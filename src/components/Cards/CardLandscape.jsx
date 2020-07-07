@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { ReactComponent as StarIcon } from '@icons/star.svg';
+import Chip from '@material-ui/core/Chip';
+import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Chip from '@material-ui/core/Chip';
+import React, { useState } from 'react';
 
-import { ReactComponent as StarIcon } from '@icons/star.svg';
 const defaultImage = require('./images/default-image.svg');
 
 const useStyles = makeStyles((theme) => ({
