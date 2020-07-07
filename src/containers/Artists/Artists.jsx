@@ -23,7 +23,7 @@ const Artists = () => {
   return (
     <div className="artists">
       {genres.map((genre) => (
-        <Section className="generoArtistas" title={genre.name}>
+        <Section key={genre.id} className="generoArtistas" title={genre.name}>
           <SimpleBarReact
             direction="rtl"
             autoHide={false}
